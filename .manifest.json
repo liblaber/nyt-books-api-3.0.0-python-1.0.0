@@ -1,0 +1,169 @@
+{
+  "liblabVersion": "2.1.19",
+  "date": "2024-07-10T16:51:14.917Z",
+  "config": {
+    "apiId": 407,
+    "sdkName": "nyt-books-sdk",
+    "sdkVersion": "1.0.0",
+    "liblabVersion": "2",
+    "deliveryMethods": ["zip"],
+    "languages": ["python"],
+    "apiVersion": "1.0.0",
+    "apiName": "nyt-books-api",
+    "specFilePath": "spec.yaml",
+    "languageOptions": {
+      "python": {
+        "alwaysInitializeOptionals": false,
+        "additionalConstructorParameters": [
+          {
+            "name": "api_key"
+          }
+        ],
+        "pypiPackageName": "nyt-books",
+        "githubRepoName": "",
+        "ignoreFiles": [],
+        "liblabVersion": "2",
+        "sdkVersion": "1.0.0"
+      },
+      "typescript": {
+        "bundle": false,
+        "exportClassDefault": false,
+        "httpClient": "axios",
+        "npmName": "nyt-books",
+        "npmOrg": "",
+        "githubRepoName": "",
+        "ignoreFiles": [],
+        "liblabVersion": "2",
+        "sdkVersion": "1.0.0"
+      }
+    },
+    "publishing": {
+      "githubOrg": ""
+    },
+    "devContainer": true,
+    "generateEnv": true,
+    "includeOptionalSnippetParameters": true,
+    "inferServiceNames": false,
+    "injectedModels": [],
+    "license": {
+      "type": "MIT",
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT",
+      "path": "MIT.ejs"
+    },
+    "responseHeaders": false,
+    "retry": {
+      "enabled": true,
+      "maxAttempts": 3,
+      "retryDelay": 150,
+      "maxDelay": 5000,
+      "retryDelayJitter": 50,
+      "backOffFactor": 2,
+      "httpCodesToRetry": [408, 429, 500, 502, 503, 504],
+      "httpMethodsToRetry": ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"]
+    },
+    "multiTenant": true,
+    "hooksLocation": {
+      "bucketKey": "13287/hooks.zip",
+      "bucketName": "dev-liblab-api-stack-hooks"
+    },
+    "specUrl": "https://dev-liblab-api-stack-specs.s3.us-east-1.amazonaws.com/407/open-api-spec.yaml?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIA3C2RXH7MWUCMN7ON%2F20240710%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240710T165109Z&X-Amz-Expires=43200&X-Amz-Signature=7b1f5a219b25cd8f57e45585fd7161c3936d7d7cba9107d5a43f825aa802dd61&X-Amz-SignedHeaders=host&x-id=GetObject",
+    "includeWatermark": true,
+    "alwaysInitializeOptionals": false,
+    "additionalConstructorParameters": [
+      {
+        "name": "api_key"
+      }
+    ],
+    "pypiPackageName": "nyt-books",
+    "githubRepoName": "",
+    "ignoreFiles": [],
+    "language": "python",
+    "deliveryMethod": "zip",
+    "hooks": {
+      "enabled": true,
+      "sourceDir": "/tmp/resources/hooks"
+    },
+    "usesFormData": false,
+    "authentication": {},
+    "environmentVariables": [],
+    "fileOutput": "/tmp",
+    "httpLibrary": {
+      "name": "axios",
+      "packages": {
+        "axios": "^1.6.8"
+      },
+      "languages": ["typescript"]
+    },
+    "auth": [],
+    "customQueries": {
+      "paths": [],
+      "rawQueries": [],
+      "queriesData": []
+    }
+  },
+  "files": [
+    "src/nyt_books_sdk/models/base.py",
+    "src/nyt_books_sdk/models/utils/json_map.py",
+    "src/nyt_books_sdk/models/__init__.py",
+    "src/nyt_books_sdk/services/__init__.py",
+    "src/nyt_books_sdk/__init__.py",
+    "src/nyt_books_sdk/net/__init__.py",
+    "src/nyt_books_sdk/net/headers/__init__.py",
+    "src/nyt_books_sdk/net/transport/__init__.py",
+    "src/nyt_books_sdk/hooks/__init__.py",
+    "src/nyt_books_sdk/net/environment/__init__.py",
+    "src/nyt_books_sdk/net/request_chain/__init__.py",
+    "src/nyt_books_sdk/net/request_chain/handlers/__init__.py",
+    "src/nyt_books_sdk/net/transport/request.py",
+    "src/nyt_books_sdk/net/transport/response.py",
+    "src/nyt_books_sdk/net/transport/request_error.py",
+    "src/nyt_books_sdk/sdk.py",
+    "src/nyt_books_sdk/net/transport/serializer.py",
+    "src/nyt_books_sdk/services/utils/validator.py",
+    "src/nyt_books_sdk/services/utils/base_service.py",
+    "pyproject.toml",
+    ".gitignore",
+    "src/nyt_books_sdk/models/utils/cast_models.py",
+    "src/nyt_books_sdk/net/transport/utils.py",
+    "src/nyt_books_sdk/hooks/hook.py",
+    "install.sh",
+    "install.cmd",
+    "examples/install.sh",
+    "examples/install.cmd",
+    "src/nyt_books_sdk/net/headers/base_header.py",
+    "src/nyt_books_sdk/net/environment/environment.py",
+    "src/nyt_books_sdk/net/request_chain/request_chain.py",
+    "src/nyt_books_sdk/net/request_chain/handlers/base_handler.py",
+    "src/nyt_books_sdk/net/request_chain/handlers/http_handler.py",
+    "src/nyt_books_sdk/net/request_chain/handlers/hook_handler.py",
+    "src/nyt_books_sdk/net/request_chain/handlers/retry_handler.py",
+    "examples/sample.py",
+    ".env.example",
+    "/examples/.env.example",
+    "src/nyt_books_sdk/services/utils/default_headers.py",
+    "./LICENSE",
+    ".devcontainer/devcontainer.json",
+    "documentation/models/OverviewResponse.md",
+    "src/nyt_books_sdk/services/lists_json.py",
+    "src/nyt_books_sdk/services/reviews_json.py",
+    "documentation/models/GetReviewsFormatOkResponse.md",
+    "src/nyt_books_sdk/models/overview_response.py",
+    "documentation/services/ListsJsonService.md",
+    "documentation/services/ReviewsJsonService.md",
+    "documentation/models/GetListsNamesFormatOkResponse.md",
+    "documentation/models/Result.md",
+    "documentation/models/GetListsFormatOkResponse.md",
+    "documentation/models/GetListsDateListJsonOkResponse.md",
+    "documentation/models/GetListsBestSellersHistoryJsonOkResponse.md",
+    "src/nyt_books_sdk/models/get_reviews_format_ok_response.py",
+    "documentation/services/ListsService.md",
+    "src/nyt_books_sdk/models/get_lists_names_format_ok_response.py",
+    "src/nyt_books_sdk/services/lists.py",
+    "README.md",
+    "src/nyt_books_sdk/models/result.py",
+    "src/nyt_books_sdk/models/get_lists_format_ok_response.py",
+    "src/nyt_books_sdk/models/get_lists_date_list_json_ok_response.py",
+    "src/nyt_books_sdk/models/get_lists_best_sellers_history_json_ok_response.py"
+  ]
+}
